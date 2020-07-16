@@ -1,0 +1,4 @@
+{'Tiempo': 'Jun 24 2020 10:28:18', 'hostname': 'R6', 'Fa_In_Octet': '39158', 'Fa_In_uPackets': '8', 'Fa_Out_Octet': '52691', 'Fa_Out_uPackets': '241'}
+{'Tiempo': 'Jun 24 2020 10:29:33', 'hostname': 'R6', 'Fa_In_Octet': '40496', 'Fa_In_uPackets': '8', 'Fa_Out_Octet': '55009', 'Fa_Out_uPackets': '254'}
+{'Tiempo': 'Jun 24 2020 10:30:28', 'hostname': 'R6', 'Fa_In_Octet': '41400', 'Fa_In_uPackets': '8', 'Fa_Out_Octet': '56636', 'Fa_Out_uPackets': '264'}
+{'Tiempo': 'Jun 24 2020 10:31:29', 'hostname': 'R6', 'Fa_In_Octet': '42630', 'Fa_In_uPackets': '8', 'Fa_Out_Octet': '58499', 'Fa_Out_uPackets': '275'}

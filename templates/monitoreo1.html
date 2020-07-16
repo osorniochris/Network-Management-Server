@@ -1,0 +1,23 @@
+{%extends 'template.html'%}
+
+{% block content%}
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">Monitoreo en tiempo real</h2>
+            </div>
+        </div>
+        <hr><br>
+        <div class="row">
+            <div class="col s12 center-align">
+                <embed type="image/svg+xml" src="{{url_for('static', filename= 'graphs/')}}{{_router_name}}">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}   

@@ -1,0 +1,30 @@
+{%extends 'template.html'%}
+
+{% block content%}
+	<br>
+	<br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h2 class="center-align">Administración de red</h2>
+                <br><br>
+                <form  method="POST">
+                    <center><button class="waves-effect waves-light btn-large red lighten-2" type="submit" id="update_button"><i class="fas fa-arrow-alt-circle-up"></i>&nbsp;Actualizar</button></center>
+                </form>
+                <br>
+                <div class="progress red lighten-2" style="visibility: hidden;" id="bar">
+                    <div class="indeterminate red lighten-4"></div>
+                </div>
+            </div>
+            <div class="col s12 m5 offset-s1 offset-m1">
+                <img class="responsive-img" style="height:300px;" src="{{url_for('static', filename= 'imgs/network.png')}}">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s10 m6 offset-s2">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}    

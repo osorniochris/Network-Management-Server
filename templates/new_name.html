@@ -1,0 +1,33 @@
+{%extends 'template.html'%}
+
+{% block content%}
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">{{hostname}}</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <form class="col s12" method="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix fas fa-network-wired"></i>
+                        <input id="new_name" type="text" class="validate" name="new_name">
+                        <label for="new_name">Nuevo hostname</label>
+                    </div>
+                    <br>
+                    <center><button class="waves-effect waves-light btn-large red lighten-2" type="submit" id="update_button"><i class="fas fa-arrow-alt-circle-up"></i>&nbsp;Cambiar nombre</button></center>
+                </div>
+            </form>
+            <br>
+            <div class="progress red lighten-2" style="visibility: hidden;" id="bar">
+               <div class="indeterminate red lighten-4"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}  

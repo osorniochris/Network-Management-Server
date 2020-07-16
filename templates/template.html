@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{url_for('static', filename= 'libs/materialize/css/materialize.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'libs/fontawesome/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/form.css')}}">
+    
+
+    <script src="{{url_for('static', filename= 'libs/jquery-3.1.1/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename= 'libs/materialize/js/materialize.min.js')}}"></script>
+    <script src="{{url_for('static', filename= 'js/main.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename= 'libs/fontawesome/js/all.min.js')}}"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><i class="fas fa-home" style="font-size: 3rem;"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="topologia">Topología</a></li>
+                <li><a href="/dispositivos">Dispositivos</a></li>
+                <li><a href="monitoreo">Monitoreo</a></li>
+                <li><a href="editar">Editar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages: %}
+        {% for category, message in messages: %}
+            <div class="container">
+                <div class="card-panel {{category}}">
+                    {{message}}
+                </div>
+            </div>
+        {%endfor%}
+
+    {% endif %}
+    {% endwith %}
+
+    {%block content%}
+    {%endblock%}
+
+</body>
+</html>
